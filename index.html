@@ -1,3 +1,37 @@
 <html>
+<head>
+</head>
+<body>
 Tutorial on how to use Twitter Emoji
+<br>
+<script>
+var start = 2000
+var stop = 2768
+for (var i = start; i < stop; i++) {
+  var img=document.createElement('img');
+  img.setAttribute("src",'https://twemoji.maxcdn.com/v/latest/72x72/'+i.toString()+'.png')
+  document.body.appendChild(img);
+}
+
+//for (var i = 2764; i < 2774; i++) {
+  //var n = "\u2764";
+  //n = '\u'+'2764'+'\uFE0F'
+  //var span = document.createElement('span');
+  //span.textContent = n;
+  //document.body.appendChild(span);
+//}
+
+//twemoji.parse(document.body);
+
+//var img = div.querySelector('img');
+
+// note the div is preserved
+//img.parentNode === div; // true
+
+//img.src;        // https://twemoji.maxcdn.com/v/latest/72x72/2764.png
+//img.alt;        // \u2764\uFE0F
+//img.className;  // emoji
+//img.draggable;  // false
+</script>
+</body>
 </html>
